@@ -1,0 +1,22 @@
+# .clang-format
+
+BasedOnStyle: LLVM  # You can change this to Google, Chromium, Mozilla, or WebKit
+IndentWidth: 4      # Number of spaces to use for indentation
+UseTab: Never        # Use spaces instead of tabs
+ColumnLimit: 120     # Set the maximum line length
+AllowShortBlocksOnASingleLine: Empty          # Allow short blocks on a single line
+AllowShortIfStatementsOnASingleLine: true     # Allow short if statements on a single line
+AllowShortLoopsOnASingleLine: true            # Allow short loops on a single line
+BreakBeforeBraces: Attach # Brace style
+SpaceBeforeParens: ControlStatements # Space before parentheses in control statements
+SpaceAfterCStyleCast: true # Space after C-style casts
+SpacesInParentheses: false # No spaces in parentheses
+SpacesInAngles: false      # No spaces in angle brackets
+UseCRLF: false             # Use LF line endings (set to true for Windows)
+SortIncludes: true         # Sort includes alphabetically
+IncludeBlocks: Preserve    # Preserve blocks of includes
+SortUsingDeclarations: true # Sort using declarations
+Cpp11BracedListStyle: true # Support for C++11 braced lists
+AllowAllParametersOfDeclarationOnNextLine: false # Don't allow parameters on next line
+# BreakBeforeParameter: false # Don't break before parameter in function declarations
+
