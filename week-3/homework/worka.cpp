@@ -58,7 +58,7 @@ int main() {
         cout << "| Process Id | Starting Memory Address | Size of the Process (MB) | Unused Space (MB) |\n";
         cout << "|------------|--------------------------|--------------------------|-------------------|\n";
 
-        // Run memory allocation
+        // Run memory allocation    
         userMemoryAllocation();
 
     } catch (const std::exception& e) {
