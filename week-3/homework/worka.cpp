@@ -1,7 +1,7 @@
 #include <iostream>
-#include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <unistd.h>
 // #include <stdexcept>
 // #include <errno.h>
 
@@ -11,8 +11,8 @@ int main() {
     try {
         const int MEMORY_SIZE = 16;
         const int PAGE_COUNT = 100;
-        const int PAGE_SIZE = 160;  // 160 MB per page
-        const int MEMORY_PER_NUMBER = 80;  // 80 MB per unit number
+        const int PAGE_SIZE = 160;        // 160 MB per page
+        const int MEMORY_PER_NUMBER = 80; // 80 MB per unit number
 
         int memory[PAGE_COUNT] = {0};
         int processCounter = 1;
@@ -22,11 +22,11 @@ int main() {
         auto userMemoryAllocation = [&]() {
             srand(time(0)); // Seed random number generator
             /*
-            * Loop through memory pages and allocate memory to processes
-            * Randomly generate number of pages required for each process
-            */
+             * Loop through memory pages and allocate memory to processes
+             * Randomly generate number of pages required for each process
+             */
             for (int i = 0; i < PAGE_COUNT; i++) {
-                if (memory[i] == 0) { // Check if page is free
+                if (memory[i] == 0) {                    // Check if page is free
                     int pagesRequired = rand() % 30 + 1; // Randomly generate number of pages required
                     int processSize = pagesRequired * MEMORY_PER_NUMBER;
                     int allocatedMemory = pagesRequired * PAGE_SIZE;
@@ -58,10 +58,10 @@ int main() {
         cout << "| Process Id | Starting Memory Address | Size of the Process (MB) | Unused Space (MB) |\n";
         cout << "|------------|--------------------------|--------------------------|-------------------|\n";
 
-        // Run memory allocation    
+        // Run memory allocation
         userMemoryAllocation();
 
-    } catch (const std::exception& e) {
+    } catch (const std::exception &e) {
         std::cerr << "An error occurred: " << e.what() << std::endl;
         return 1;
     } catch (...) {
