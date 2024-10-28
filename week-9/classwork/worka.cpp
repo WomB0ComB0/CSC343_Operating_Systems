@@ -1,5 +1,15 @@
+/*
+std::condition_variable is a synchronization primitive that allows threads to wait---
+for certain conditions to become true.
+EX: declarations, std::condition_varibale not_full; and std::condition_variable not_empty;
+*/
 #include <condition_variable>
 #include <iostream>
+/*
+std::mutex is a synchronization primitive provided by the C++ Standard Library---
+, specifically in the <mutex> header. When you declare std::mutex m;, creates an---
+instance of a mutex named m.
+*/
 #include <mutex>
 #include <thread>
 #include <vector>
