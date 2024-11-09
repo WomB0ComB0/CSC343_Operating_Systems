@@ -1,4 +1,3 @@
-{{REWRITTEN_CODE}}
 ## Q1. Explain the difference between preemptive and non-preemptive scheduling.
 
 ## Q2. Consider the following set of processes, with the length of the CPU burst time given in milliseconds:

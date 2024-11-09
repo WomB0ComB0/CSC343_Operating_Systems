@@ -1,4 +1,3 @@
-{{REWRITTEN_CODE}}
 ## Locking Mechanisms
 
 **Q1.** Explain why Windows and Linux implement multiple locking mechanisms. Describe the circumstances under which they use spinlocks, mutex locks, semaphores, and condition variables. In each case, explain why the mechanism is needed.

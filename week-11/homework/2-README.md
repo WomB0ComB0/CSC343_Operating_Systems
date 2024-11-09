@@ -1,4 +1,3 @@
-{{REWRITTEN_CODE}}
 ##  Operating System Locking Mechanisms
 
 **Q1. Explain why Windows, Linux, and Solaris implement multiple locking mechanisms. Describe the circumstances under which they use spinlocks, mutex locks, semaphores, adaptive mutex locks, and condition variables. In each case, explain why the mechanism is needed.**
